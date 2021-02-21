@@ -1,12 +1,14 @@
 .projects {
-    background-color: #fff;
-    padding: 10rem;
+    background-color: #f4f4f4;
+    padding-top: 12rem;
+    padding-bottom: 22rem;
+    margin-bottom: -8vh;
 
 
     &-container {
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
         justify-items: center;
         grid-column-gap: 2rem;
         grid-row-gap: 8rem;
