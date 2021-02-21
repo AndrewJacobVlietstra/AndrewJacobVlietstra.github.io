@@ -422,12 +422,19 @@ li {
 
 .card__picture {
   background-size: cover;
-  height: 16rem;
+  height: 16.5rem;
   background-blend-mode: screen;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
+}
+
+.card__picture .gif-picture {
+  position: relative;
+  top: 1rem;
+  left: 1rem;
+  width: 10rem;
 }
 
 .card__picture--1 {

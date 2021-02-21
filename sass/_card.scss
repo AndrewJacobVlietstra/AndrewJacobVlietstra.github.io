@@ -58,12 +58,19 @@ width: 32rem;
     // Front Side Card Styling
     &__picture {
         background-size: cover;
-        height: 16rem;
+        height: 16.5rem;
         background-blend-mode: screen;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         border-top-left-radius: 3px;
         border-top-right-radius: 3px;
+
+        .gif-picture {
+            position: relative;
+            top: 1rem;
+            left: 1rem;
+            width: 10rem;
+        }
 
 
         &--1 {
@@ -72,6 +79,7 @@ width: 32rem;
             background-position: bottom;
             background-repeat: no-repeat;
             background-size: cover;
+
         }
 
         &--2 {
