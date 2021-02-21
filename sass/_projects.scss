@@ -7,6 +7,9 @@
         width: 100%;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        justify-items: center;
+        grid-column-gap: 2rem;
+        grid-row-gap: 8rem;
 
     }
 }
@@ -20,3 +23,4 @@
 .fa-html5{color: #e34c26;}
 .fa-css3-alt{color: #1383db;}
 .fa-js{color: #fcb400;}
+.fa-sass{color: rgb(255, 67, 99);}
