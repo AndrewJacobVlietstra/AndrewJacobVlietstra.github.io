@@ -1,0 +1,28 @@
+.btn {
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    border-radius: 50px;
+    margin: 0 1rem;
+    box-shadow: 0 1rem 2rem rgba(#000, 0.75);
+    transition: all 0.25s;
+
+
+    &:active {
+        transform: translateY(0.4rem);
+        box-shadow: 0 .5rem 1rem rgba(#000, 0.75);
+    }
+
+    &--dark {
+        background-color: #333;
+        color: #fff;
+    }
+
+    &--light {
+        background-color: #fff;
+        color: #222;
+    }
+
+    
+}

@@ -1,0 +1,22 @@
+.projects {
+    background-color: #fff;
+    padding: 10rem;
+
+
+    &-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+
+    }
+}
+
+.project-icon {
+    font-size: 2.75rem;
+    position: relative;
+    top: .3rem;
+}
+
+.fa-html5{color: #e34c26;}
+.fa-css3-alt{color: #1383db;}
+.fa-js{color: #fcb400;}

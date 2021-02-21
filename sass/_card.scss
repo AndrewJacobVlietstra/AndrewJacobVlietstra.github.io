@@ -1,0 +1,140 @@
+
+.card {
+// For Functionality
+position: relative;
+perspective: 120rem;
+-moz-perspective: 150rem; //Firefox support
+height: 40rem;
+width: 30rem;
+
+
+    &__side {
+        height: 40rem;
+        transition: all 1s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        backface-visibility: hidden;
+        border-radius: 3px;
+        overflow: hidden;
+        box-shadow: 0 1.5rem 3rem rgba(#000, 0.22);
+        
+
+        &--front{
+            color: #fff;
+        }
+
+        // Back side Card Colors
+        &--back {
+            transform: rotateY(180deg);
+
+            &-1 {
+                background-image: linear-gradient(to right bottom, #df3124, black);
+            }
+
+        }
+    }
+
+    &:hover &__side--front {
+        transform: rotateY(-180deg);
+    }
+    &:hover &__side--back {
+        transform: rotateY(0deg);
+    }
+
+    // Front Side Card Styling
+    &__picture {
+        background-size: cover;
+        height: 16rem;
+        background-blend-mode: screen;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+
+
+        &--1 {
+            background-image: linear-gradient(to right bottom, black, #df3124),
+            url(../../dist/img/nat-5.jpg);
+        }
+
+    }
+
+    &__heading {
+        font-size: 2.8rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: right;
+        color: #fff;
+        position: absolute;
+        top: 10rem;
+        right: 1.5rem;
+        width: 76%;
+        line-height: 1.45;
+
+    }
+
+    &__heading-span {
+        padding: 0.75rem 1.5rem;
+        // Provides padding on both side for inline elements when line break occurs
+        box-decoration-break: clone;
+
+        &--1 {
+            background-image: linear-gradient(to right bottom, rgba(#df3124, 0.85), rgba(black, 0.85));
+        }
+
+
+    }
+
+    &__details {
+        padding: 3rem;
+        padding-top: 5rem;
+
+        ul {
+            list-style: none;
+            width: 80%;
+            color: #000;
+            margin: 0 auto;
+
+            li {
+                text-align: center;
+                font-size: 1.5rem;
+                padding: 1rem;
+                
+                &:not(:last-child) {
+                    border-bottom: 1px solid lightgrey;
+                }
+            }
+        }
+
+    }
+
+    // Back Side Styling
+    &__cta {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        text-align: center;
+    }
+
+    &__text-box {
+        margin-bottom: 2rem;
+        color: #fff;
+    }
+
+    &__text {
+        font-family: 'Lato';
+        text-align: center;
+        font-size: 1.4rem;
+        line-height: 1.6;
+        letter-spacing: 1px;
+    }
+
+
+    &-btn {
+        margin: 1rem 0;
+    }
+}

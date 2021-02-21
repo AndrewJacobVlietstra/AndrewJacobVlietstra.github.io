@@ -1,0 +1,48 @@
+.about-me {
+    background-color: #f1f1f1;
+    padding: 15rem 0;
+    margin-top: -11vh;
+    width: 100%;
+
+    &-content {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &-text {
+        .sub-heading {
+            font-size: 3rem;
+            color: #444;
+        }
+
+        .paragraph {
+            text-align: left;
+            width: 33vw;
+            font-size: 1.6rem;
+            line-height: 1.6;
+            letter-spacing: 2px;
+            color: #666;
+        }
+    }
+
+    &-tech {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        
+
+        img {
+            width: 20rem;
+            filter: drop-shadow(0 .6rem 1rem #222);
+            transition: all 0.25s;
+
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+
+    hr {
+        margin: 1rem 0;
+        width: 80%;
+    }
+}
