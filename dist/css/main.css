@@ -142,6 +142,10 @@ li {
   text-align: center;
 }
 
+.row {
+  width: 100%;
+}
+
 .header-text-box {
   position: absolute;
   top: 50%;
@@ -660,6 +664,7 @@ li {
 
 .why-work-with-me {
   padding: 12rem 0;
+  padding-bottom: 13rem;
 }
 
 .why-work-with-me .section-heading {
@@ -714,7 +719,65 @@ li {
 }
 
 .footer {
-  padding: 12rem 0;
+  padding: 1rem 0;
   background-color: #333;
+  color: #f4f4f4;
+}
+
+.footer .row {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.footer .row .logo {
+  position: relative;
+  top: 6rem;
+  font-family: 'Amsterdam', Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-size: 2rem;
+  letter-spacing: 5px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.footer .row .logo:hover {
+  color: #06affd;
+}
+
+.footer .row .footer-list {
+  font-size: 1.4rem;
+  border-top: 1px solid #777;
+  padding-top: 1rem;
+}
+
+.footer .row .footer-items {
+  display: inline-block;
+  padding: 0 1.5rem;
+}
+
+.footer .row .footer-links {
+  color: #f4f4f4;
+  font-size: 1.4rem;
+  -webkit-transition: all 0.24s;
+  transition: all 0.24s;
+  cursor: pointer;
+}
+
+.footer .row .footer-links:hover {
+  color: #06affd;
+}
+
+.footer .row .copyright {
+  font-size: 1.1rem;
+  margin-top: 5rem;
+}
+
+.footer .row-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 /*# sourceMappingURL=main.css.map */
