@@ -1,3 +1,4 @@
+
 .skills {
     height: 80vh;
     background-image: linear-gradient(rgba(rgb(82, 30, 179), .6), rgba(#1e90ff, .5)),
@@ -6,9 +7,9 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    // filter: blur(2px);
     clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
     backface-visibility: hidden;
+
 
     &-container {
         width: 100%;
@@ -16,6 +17,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        backdrop-filter: blur(3px); // blurs parent element, so in this case the background-image
+        
 
         & > *:not(:last-child) {
             margin-right: 4rem;
@@ -31,6 +34,7 @@
             border-radius: 5px;
             background-color: #f4f4f4c9;
             transition: all 0.25s;
+            
 
             &:hover{
                 transform: translateY(-1rem);
@@ -58,18 +62,18 @@
         font-size: 2.4rem;
         font-weight: 400;
         text-transform: uppercase;
-        color: #555;
+        color: #444;
         text-align: center;
         letter-spacing: 0;
     }
 
     &-list {
         position: relative;
-        top: 10rem;
+        top: 8.5rem;
         
         text-align: center;
         text-transform: uppercase;
-        font-size: 1.4rem;
+        font-size: 1.5rem;
         font-weight: 400;
         line-height: 2.4;
         color: #666;
