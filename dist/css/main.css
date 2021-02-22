@@ -214,6 +214,7 @@ li {
           align-items: center;
   margin-right: 5rem;
   height: 100%;
+  opacity: 1;
 }
 
 .main-nav-item {
@@ -240,7 +241,7 @@ li {
 }
 
 .main-nav-link:hover {
-  color: #e9c915;
+  color: #06affd;
 }
 
 .main-nav .logo {
@@ -251,12 +252,13 @@ li {
   color: #fff;
   font-size: 1.5rem;
   letter-spacing: 5px;
+  cursor: pointer;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
 .main-nav .logo:hover {
-  color: #e9c915;
+  color: #06affd;
 }
 
 .main-nav .icon {
@@ -334,8 +336,11 @@ li {
   width: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(32rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+  -ms-grid-columns: (minmax(32rem, 38rem))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(32rem, 38rem));
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   justify-items: center;
   grid-column-gap: 1rem;
   grid-row-gap: 8rem;
@@ -369,7 +374,7 @@ li {
           perspective: 120rem;
   -moz-perspective: 150rem;
   height: 42rem;
-  width: 32rem;
+  width: 31rem;
 }
 
 .card__side {
