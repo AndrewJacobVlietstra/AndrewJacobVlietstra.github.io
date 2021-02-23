@@ -1,15 +1,20 @@
-@import "base";
+// Other important resources
 @import "variables";
 @import "animations";
-@import "buttons";
 @import "fonts";
 @import "utilities";
+@import "buttons";
+@import "base";
 
+// Structure of Page
 @import "header";
 @import "navigation";
 @import "about-me";
-@import "projects";
 @import "card";
+@import "projects";
 @import "skills";
 @import "why-work-with-me";
 @import "footer";
+
+// Media Queries
+@import "queries";

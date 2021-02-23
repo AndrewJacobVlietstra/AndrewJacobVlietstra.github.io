@@ -1,47 +1,11 @@
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  padding: 4rem;
-  font-family: 'Lato', Arial, sans-serif;
-}
-
-a {
-  text-decoration: none;
-}
-
-li {
-  list-style: none;
-}
-
-.section-heading {
-  font-family: 'Raleway', 'Lato', Arial, Helvetica, sans-serif;
-  font-size: 4rem;
-  color: #333;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  -webkit-transition: all 0.25s;
-  transition: all 0.25s;
-}
-
 @-webkit-keyframes animateHueRotate {
   0% {
     -webkit-filter: hue-rotate(0deg);
             filter: hue-rotate(0deg);
   }
   33% {
-    -webkit-filter: hue-rotate(-110deg);
-            filter: hue-rotate(-110deg);
+    -webkit-filter: hue-rotate(-100deg);
+            filter: hue-rotate(-100deg);
   }
   66% {
     -webkit-filter: hue-rotate(80deg);
@@ -59,8 +23,8 @@ li {
             filter: hue-rotate(0deg);
   }
   33% {
-    -webkit-filter: hue-rotate(-110deg);
-            filter: hue-rotate(-110deg);
+    -webkit-filter: hue-rotate(-100deg);
+            filter: hue-rotate(-100deg);
   }
   66% {
     -webkit-filter: hue-rotate(80deg);
@@ -70,6 +34,35 @@ li {
     -webkit-filter: hue-rotate(0deg);
             filter: hue-rotate(0deg);
   }
+}
+
+@font-face {
+  font-family: Amsterdam;
+  src: url("../fonts/Amsterdam-ZVGqm.ttf");
+}
+
+.sm-mb {
+  margin-bottom: 2rem;
+}
+
+.md-mb {
+  margin-bottom: 4.5rem;
+}
+
+.lg-mb {
+  margin-bottom: 8rem;
+}
+
+.xlg-mb {
+  margin-bottom: 10rem;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.row {
+  width: 100%;
 }
 
 .btn {
@@ -117,33 +110,42 @@ li {
   width: 100%;
 }
 
-@font-face {
-  font-family: Amsterdam;
-  src: url("../fonts/Amsterdam-ZVGqm.ttf");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.sm-mb {
-  margin-bottom: 2rem;
+html {
+  font-size: 62.5%;
 }
 
-.md-mb {
-  margin-bottom: 4.5rem;
+body {
+  padding: 4rem;
+  font-family: 'Lato', Arial, sans-serif;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(rgba(19, 131, 219, 0.9)));
+  background-image: linear-gradient(white, rgba(19, 131, 219, 0.9));
 }
 
-.lg-mb {
-  margin-bottom: 8rem;
+a {
+  text-decoration: none;
 }
 
-.xlg-mb {
-  margin-bottom: 10rem;
+li {
+  list-style: none;
 }
 
-.center-text {
-  text-align: center;
-}
-
-.row {
-  width: 100%;
+.section-heading {
+  font-family: 'Raleway', 'Lato', Arial, Helvetica, sans-serif;
+  font-size: 4rem;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
 }
 
 .header-text-box {
@@ -309,6 +311,9 @@ li {
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .about-me-tech img {
@@ -329,53 +334,10 @@ li {
   width: 50%;
 }
 
-.projects {
-  background-color: #f4f4f4;
-  padding-top: 12rem;
-  padding-bottom: 22rem;
-  margin-bottom: -8vh;
-}
-
-.projects-container {
-  width: 100%;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(32rem, 38rem))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(32rem, 38rem));
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  justify-items: center;
-  grid-column-gap: 1rem;
-  grid-row-gap: 8rem;
-}
-
-.project-icon {
-  font-size: 2.75rem;
-  position: relative;
-  top: .3rem;
-}
-
-.fa-html5 {
-  color: #e34c26;
-}
-
-.fa-css3-alt {
-  color: #1383db;
-}
-
-.fa-js {
-  color: #fcb400;
-}
-
-.fa-sass {
-  color: #ff4363;
-}
-
 .card {
   position: relative;
-  -webkit-perspective: 120rem;
-          perspective: 120rem;
+  -webkit-perspective: 150rem;
+          perspective: 150rem;
   -moz-perspective: 150rem;
   height: 42rem;
   width: 31rem;
@@ -573,6 +535,49 @@ li {
   margin: 1rem 0;
 }
 
+.projects {
+  background-color: #f4f4f4;
+  padding-top: 12rem;
+  padding-bottom: 22rem;
+  margin-bottom: -8vh;
+}
+
+.projects-container {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(32rem, 38rem))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(32rem, 38rem));
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  grid-column-gap: 1rem;
+  grid-row-gap: 8rem;
+}
+
+.project-icon {
+  font-size: 2.75rem;
+  position: relative;
+  top: .3rem;
+}
+
+.fa-html5 {
+  color: #e34c26;
+}
+
+.fa-css3-alt {
+  color: #1383db;
+}
+
+.fa-js {
+  color: #fcb400;
+}
+
+.fa-sass {
+  color: #ff4363;
+}
+
 .skills {
   height: 80vh;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(82, 30, 179, 0.6)), to(rgba(30, 144, 255, 0.5))), url("../img/skills-bg2.jpg");
@@ -599,8 +604,8 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-backdrop-filter: blur(3px);
-          backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
 }
 
 .skills-container > *:not(:last-child) {
@@ -623,8 +628,8 @@ li {
 .skills-container .server:hover,
 .skills-container .database:hover,
 .skills-container .deployment:hover {
-  -webkit-transform: translateY(-1rem);
-          transform: translateY(-1rem);
+  -webkit-transform: translateY(-1.5rem);
+          transform: translateY(-1.5rem);
 }
 
 .skills-icon {
@@ -663,8 +668,10 @@ li {
 }
 
 .why-work-with-me {
-  padding: 12rem 0;
+  background-color: #fff;
+  padding: 18rem 0;
   padding-bottom: 13rem;
+  margin-top: -8vh;
 }
 
 .why-work-with-me .section-heading {
@@ -769,7 +776,7 @@ li {
 }
 
 .footer .row .copyright {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin-top: 5rem;
 }
 
@@ -779,5 +786,36 @@ li {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+@media only screen and (max-width: 1280px) {
+  .main-nav-link {
+    font-size: 1.4rem;
+  }
+  .header-text-box .lg-heading {
+    font-size: 4.9rem;
+  }
+  .header-text-box .md-heading {
+    font-size: 3rem;
+  }
+  .about-me-text {
+    margin-right: 7.5rem;
+  }
+  .about-me-text .paragraph {
+    max-width: 47rem;
+  }
+  .about-me-tech {
+    position: relative;
+    top: 2.5rem;
+  }
+  .about-me-tech img {
+    width: 17.5rem;
+  }
+  .about-me hr {
+    width: 70%;
+  }
+  .why-work-with-me .why-work-container > *:not(:last-child) {
+    margin-right: 5rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
