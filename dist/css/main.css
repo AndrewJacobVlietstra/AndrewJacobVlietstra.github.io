@@ -1239,6 +1239,22 @@ li {
   .why-work-with-me .section-paragraph {
     padding: 1rem;
   }
+  .footer .row-links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .footer-list {
+    margin: 0 auto;
+    width: 80%;
+  }
+  .footer .footer-items {
+    margin-bottom: 2rem;
+  }
+  .footer .copyright {
+    padding: 1rem;
+  }
 }
 
 @media only screen and (max-width: 400px) {
@@ -1281,19 +1297,6 @@ li {
   .why-work-with-me .why-work-container p {
     max-width: 35rem;
     font-size: 1.4rem;
-  }
-  .footer .row-links {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .footer .footer-list {
-    margin: 0 auto;
-    width: 80%;
-  }
-  .footer .footer-items {
-    margin-bottom: 2rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

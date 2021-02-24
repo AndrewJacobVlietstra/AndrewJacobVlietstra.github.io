@@ -460,7 +460,24 @@
     }
 
     
+    .footer {
+        .row-links {
+            flex-direction: column;
+        }
 
+        .footer-list {
+            margin: 0 auto;
+            width: 80%;
+        }
+
+        .footer-items {
+            margin-bottom: 2rem;
+        }
+
+        .copyright {
+            padding: 1rem;
+        }
+    }
 
 }
 
@@ -514,18 +531,4 @@
 
     }
 
-    .footer {
-        .row-links {
-            flex-direction: column;
-        }
-
-        .footer-list {
-            margin: 0 auto;
-            width: 80%;
-        }
-
-        .footer-items {
-            margin-bottom: 2rem;
-        }
-    }
 }
