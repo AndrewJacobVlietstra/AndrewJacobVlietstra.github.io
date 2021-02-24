@@ -31,11 +31,6 @@
             padding-right: 4rem;
         }
 
-
-        &:hover {
-            transform: translateY(-2px);
-
-        }
     }
 
     &-link {
@@ -47,6 +42,7 @@
 
         &:hover {
             color: #06affd;
+            transform: translateY(-2px);
 
             
         }

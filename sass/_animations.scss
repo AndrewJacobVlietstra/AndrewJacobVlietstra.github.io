@@ -19,14 +19,10 @@
 
 }
 
-@keyframes fadeInRight {
+@keyframes fadeInRightDelay {
     0% {
         opacity: 0;
-        transform: translate3d(-100%, 0, 0);
-    }
-
-    50% {
-        opacity: .25;
+        transform: translate3d(100%, 0, 0);
     }
 
     100% {
@@ -35,12 +31,17 @@
     }
 }
 
-.fadeInRight {
-    animation-name: fadeInRight;
-    animation-duration: .75s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-out;
-    opacity: 0;
+@keyframes fadeInLong {
+    0% {
+        opacity: 0;
+
+    }
+
+
+    100% {
+        opacity: 1;
+
+    }
 }
 
 .delay-1 {animation-delay: 100ms;}
@@ -49,4 +50,22 @@
 .delay-4 {animation-delay: 400ms;}
 .delay-5 {animation-delay: 500ms;}
 .delay-6 {animation-delay: 600ms;}
-.delay-7 {animation-delay: 700ms;}
+
+.fadeInRightDelay {
+    animation-name: fadeInRightDelay;
+    animation-duration: .6s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    opacity: 0;
+}
+
+
+
+.fadeInLong {
+    animation-name: fadeInLong;
+    animation-duration: 2.75s;
+    animation-delay: 1.25s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    opacity: 0;
+}

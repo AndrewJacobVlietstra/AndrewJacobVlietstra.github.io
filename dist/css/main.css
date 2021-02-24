@@ -36,14 +36,11 @@
   }
 }
 
-@-webkit-keyframes fadeInRight {
+@-webkit-keyframes fadeInRightDelay {
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-            transform: translate3d(-100%, 0, 0);
-  }
-  50% {
-    opacity: .25;
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
   }
   100% {
     opacity: 1;
@@ -52,14 +49,11 @@
   }
 }
 
-@keyframes fadeInRight {
+@keyframes fadeInRightDelay {
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-            transform: translate3d(-100%, 0, 0);
-  }
-  50% {
-    opacity: .25;
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
   }
   100% {
     opacity: 1;
@@ -68,16 +62,22 @@
   }
 }
 
-.fadeInRight {
-  -webkit-animation-name: fadeInRight;
-          animation-name: fadeInRight;
-  -webkit-animation-duration: .75s;
-          animation-duration: .75s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
-  opacity: 0;
+@-webkit-keyframes fadeInLong {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInLong {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .delay-1 {
@@ -110,9 +110,30 @@
           animation-delay: 600ms;
 }
 
-.delay-7 {
-  -webkit-animation-delay: 700ms;
-          animation-delay: 700ms;
+.fadeInRightDelay {
+  -webkit-animation-name: fadeInRightDelay;
+          animation-name: fadeInRightDelay;
+  -webkit-animation-duration: .6s;
+          animation-duration: .6s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  opacity: 0;
+}
+
+.fadeInLong {
+  -webkit-animation-name: fadeInLong;
+          animation-name: fadeInLong;
+  -webkit-animation-duration: 2.75s;
+          animation-duration: 2.75s;
+  -webkit-animation-delay: 1.25s;
+          animation-delay: 1.25s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  opacity: 0;
 }
 
 @font-face {
@@ -326,11 +347,6 @@ li {
   padding-right: 4rem;
 }
 
-.main-nav-item:hover {
-  -webkit-transform: translateY(-2px);
-          transform: translateY(-2px);
-}
-
 .main-nav-link {
   display: inline-block;
   color: #f4f4f4;
@@ -341,6 +357,8 @@ li {
 
 .main-nav-link:hover {
   color: #06affd;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
 }
 
 .main-nav .logo {
@@ -1006,15 +1024,12 @@ li {
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .header-text-box .lg-heading {
-    font-size: 4.6rem;
-  }
-  .header-text-box .md-heading {
-    font-size: 2.4rem;
-  }
+@media only screen and (max-width: 930px) {
   .main-nav-list {
     display: none;
+  }
+  .main-nav .logo {
+    visibility: hidden;
   }
   .active {
     display: -webkit-box;
@@ -1023,6 +1038,112 @@ li {
   }
   .mobile-nav-btn {
     visibility: visible;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header-text-box .lg-heading {
+    font-size: 4.6rem;
+  }
+  .header-text-box .md-heading {
+    font-size: 2.4rem;
+  }
+  .main-nav-list {
+    margin-right: 6.4rem;
+  }
+  .main-nav-item {
+    font-size: 1.3rem;
+  }
+  .main-nav-item:not(:last-child) {
+    padding-right: 3rem;
+  }
+  .projects {
+    margin-bottom: -10vh;
+  }
+  .skills {
+    height: 100vh;
+  }
+  .skills-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .skills-container > *:not(:last-child) {
+    margin-right: 0rem;
+    margin-bottom: 2rem;
+  }
+  .skills .front-end,
+  .skills .server,
+  .skills .database,
+  .skills .deployment {
+    width: 32rem;
+    height: 17rem;
+  }
+  .skills .front-end:hover,
+  .skills .server:hover,
+  .skills .database:hover,
+  .skills .deployment:hover {
+    -webkit-transform: translateY(-0.75rem);
+            transform: translateY(-0.75rem);
+  }
+  .skills-icon {
+    font-size: 4rem;
+    top: 3.4rem;
+  }
+  .skills-sub-heading {
+    font-size: 1.9rem;
+    top: 2.6rem;
+  }
+  .skills-list {
+    font-size: 1.35rem;
+    top: 3.7rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .why-work-with-me {
+    margin-top: -10vh;
+    padding-bottom: 7rem;
+  }
+  .why-work-with-me .section-paragraph {
+    margin-bottom: 5.4rem;
+  }
+  .why-work-with-me .why-work-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .why-work-with-me .why-work-container > *:not(:last-child) {
+    margin-right: 0rem;
+    margin-bottom: 3rem;
+  }
+  .why-work-with-me .why-work-container h3 {
+    margin-bottom: 1.4rem;
+    font-size: 2.4rem;
+  }
+  .why-work-with-me .why-work-container p {
+    max-width: 35rem;
+    font-size: 1.4rem;
+  }
+  .footer .row .logo {
+    top: 1rem;
+    left: 1rem;
+  }
+  .footer .row .footer-items {
+    padding: 0 1rem;
+  }
+  .footer .row-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 /*# sourceMappingURL=main.css.map */

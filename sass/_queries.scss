@@ -180,7 +180,23 @@
 
 
 
+// Include Mobile Navigation at this point
+@media only screen and (max-width: 930px) {
 
+    .main-nav {
+
+        &-list {display: none;}
+
+        .logo {visibility: hidden;}
+        
+    }
+
+    // Active class will override the initial display none on the links
+    .active {display: flex;}
+
+    .mobile-nav-btn {visibility: visible;}
+
+}
 
 
 // Regular Ipad
@@ -197,20 +213,121 @@
         }
     }
 
-
     .main-nav {
 
-        &-list {
-            display: none;
+        &-list {margin-right: 6.4rem;}
+        &-item {
+            font-size: 1.3rem;
+
+            &:not(:last-child){
+                padding-right: 3rem;
+            }
         }
-        
     }
 
-    // Active class will override the initial display none on the links
-    .active {display: flex;}
+    .projects {
 
-    .mobile-nav-btn {
-        visibility: visible;
+        margin-bottom: -10vh;
+
+    }
+
+    .skills {
+        height: 100vh;
+
+        &-container {
+            flex-direction: column;
+
+            & > *:not(:last-child) {
+                margin-right: 0rem;
+                margin-bottom: 2rem;
+            }
+        }
+
+        .front-end,
+        .server,
+        .database,
+        .deployment {
+            width: 32rem;
+            height: 17rem;
+
+            &:hover{
+                transform: translateY(-.75rem);
+                
+            }
+            
+        }
+
+        &-icon {
+            font-size: 4rem;
+            top: 3.4rem;
+        }
+
+        &-sub-heading {
+            font-size: 1.9rem;
+            top: 2.6rem;
+        }
+
+        &-list {
+            font-size: 1.35rem;
+            top: 3.7rem;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+    }
+
+    .why-work-with-me {
+        margin-top: -10vh;
+        padding-bottom: 7rem;
+
+        .section-paragraph {
+            margin-bottom: 5.4rem;
+        }
+
+        .why-work-container {
+            flex-direction: column;
+            align-items: center;
+
+            & > *:not(:last-child) {
+                margin-right: 0rem;
+                margin-bottom: 3rem;
+            }
+
+            h3 {
+                margin-bottom: 1.4rem;
+                font-size: 2.4rem;
+            }
+    
+            p {
+                max-width: 35rem;
+                font-size: 1.4rem;
+            }
+        }
+
+    }
+
+    .footer {
+
+        .row {
+
+            .logo {
+                top: 1rem;
+                left: 1rem;
+            }
+
+            .footer-items {
+                padding: 0 1rem;
+                
+                
+            }
+
+        }
+
+        .row-links {
+            display: flex;
+            justify-content: space-around;
+        }
+
     }
 
 }
@@ -220,7 +337,7 @@
 
 
 
-// Mobile
+// Larger Mobile
 @media only screen and (max-width: 500px) {
 
 
@@ -231,7 +348,7 @@
 
 
 
-// Small mobile
+// Smaller mobile
 @media only screen and (max-width: 400px) {
 
 
