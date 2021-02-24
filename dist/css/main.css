@@ -604,8 +604,8 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
 }
 
 .skills-container > *:not(:last-child) {
@@ -619,7 +619,9 @@ li {
   width: 25rem;
   height: 35rem;
   border-radius: 5px;
-  background-color: #f4f4f4c9;
+  background-color: rgba(244, 244, 244, 0.82);
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
   -webkit-transition: all 0.25s;
   transition: all 0.25s;
 }
@@ -709,7 +711,7 @@ li {
 }
 
 .why-work-with-me .why-work-container > *:not(:last-child) {
-  margin-right: 8rem;
+  margin-right: 10rem;
 }
 
 .why-work-with-me .why-work-container h3 {

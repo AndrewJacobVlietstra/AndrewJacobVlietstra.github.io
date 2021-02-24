@@ -18,7 +18,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        backdrop-filter: blur(4px); // blurs parent element, so in this case the background-image
+        backdrop-filter: blur(3px); // blurs parent element, so in this case the background-image
         
 
         & > *:not(:last-child) {
@@ -33,7 +33,8 @@
             width: 25rem;
             height: 35rem;
             border-radius: 5px;
-            background-color: #f4f4f4c9;
+            background-color: rgba(244, 244, 244, 0.82);
+            box-shadow: 0 1rem 2rem rgba($black-color, .4);
             transition: all 0.25s;
             
 
