@@ -409,6 +409,16 @@
 
     }
 
+    .card {
+        &__text-box {
+            margin-bottom: 4rem;
+        }
+
+        &-btn {
+            margin: .75rem 1rem;
+        }
+    }
+
     .skills {
         clip-path: none;
 

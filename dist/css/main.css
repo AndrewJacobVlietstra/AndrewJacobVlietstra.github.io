@@ -1199,6 +1199,12 @@ li {
   .about-me-tech img {
     width: 28vw;
   }
+  .card__text-box {
+    margin-bottom: 4rem;
+  }
+  .card-btn {
+    margin: .75rem 1rem;
+  }
   .skills {
     -webkit-clip-path: none;
             clip-path: none;
