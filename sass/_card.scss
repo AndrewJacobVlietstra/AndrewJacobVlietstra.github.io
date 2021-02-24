@@ -8,6 +8,7 @@ height: 42rem;
 width: 31rem;
 
 
+
     &__side {
         height: 42rem;
         transition: all 1s ease;
@@ -19,6 +20,7 @@ width: 31rem;
         border-radius: 3px;
         overflow: hidden;
         box-shadow: 0 1.5rem 3rem rgba(#000, 0.22);
+        z-index: 11;
         
 
         &--front{
@@ -72,6 +74,7 @@ width: 31rem;
             top: 1rem;
             left: 1rem;
             width: 10rem;
+            z-index: 10;
         }
 
 

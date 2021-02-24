@@ -468,6 +468,7 @@ li {
   overflow: hidden;
   -webkit-box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.22);
           box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.22);
+  z-index: 11;
 }
 
 .card__side--front {
@@ -526,6 +527,7 @@ li {
   top: 1rem;
   left: 1rem;
   width: 10rem;
+  z-index: 10;
 }
 
 .card__picture--1 {
