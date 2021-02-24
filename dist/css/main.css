@@ -316,6 +316,8 @@ li {
   width: calc(100% - 8rem);
   height: 5rem;
   background-color: #222;
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
   border-bottom: 1px solid #f4f4f4;
   z-index: 10;
   opacity: 0.9;
@@ -846,6 +848,8 @@ li {
   padding: 1rem 0;
   background-color: #333;
   color: #f4f4f4;
+  -webkit-box-shadow: 0 1.2rem 2rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 1.2rem 2rem rgba(0, 0, 0, 0.5);
 }
 
 .footer .row {
@@ -1258,6 +1262,10 @@ li {
   }
   .footer .copyright {
     padding: 1rem;
+  }
+  .footer .row .logo {
+    top: 1rem;
+    left: 0rem;
   }
 }
 
