@@ -340,6 +340,70 @@
 // Larger Mobile
 @media only screen and (max-width: 500px) {
 
+    body {
+        padding: 0rem;
+        overflow-x: hidden;
+    }
+
+    .header-text-box {
+        width: 100%;
+        .lg-heading {font-size: 2.5rem;}
+        .md-heading {font-size: 1.3rem;}
+    }
+
+    .btn {font-size: 1.2rem;}
+
+    .bg-video {
+        margin-top: -1rem;  
+    }
+
+    .main-nav {
+        left: 0;
+        width: 100%;
+        height: 7rem;
+        
+        &-list {
+            margin-right: 3.75rem;
+        }
+
+        .active {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            justify-items: center;
+            
+        }
+
+        &-item {
+            &:not(:last-child){
+                padding-right: 0rem;
+            }
+        }
+
+        &-link {
+            text-align: right;
+            font-size: 1.4rem;
+            
+        }
+    }
+
+    .about-me {
+
+        &-text {
+
+            .paragraph {
+                max-width: 80vw;
+            }
+        }
+
+        &-tech {
+
+            img {
+                width: 25vw;
+            }
+        }
+
+    }
+
 
 }
 
