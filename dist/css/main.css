@@ -499,12 +499,14 @@ li {
   background-image: linear-gradient(to right bottom, #df3124, black);
 }
 
-.card:hover .card__side--front {
+.card:hover .card__side--front,
+.card:active .card__side--front {
   -webkit-transform: rotateY(-180deg);
           transform: rotateY(-180deg);
 }
 
-.card:hover .card__side--back {
+.card:hover .card__side--back,
+.card:active .card__side--back {
   -webkit-transform: rotateY(0deg);
           transform: rotateY(0deg);
 }

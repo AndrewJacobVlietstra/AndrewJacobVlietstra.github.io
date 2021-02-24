@@ -48,10 +48,12 @@ width: 31rem;
         }
     }
 
-    &:hover &__side--front {
+    &:hover &__side--front,
+    &:active &__side--front {
         transform: rotateY(-180deg);
     }
-    &:hover &__side--back {
+    &:hover &__side--back,
+    &:active &__side--back {
         transform: rotateY(0deg);
     }
 
