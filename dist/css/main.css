@@ -36,6 +36,85 @@
   }
 }
 
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+  }
+  50% {
+    opacity: .25;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+  }
+  50% {
+    opacity: .25;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+          animation-name: fadeInRight;
+  -webkit-animation-duration: .75s;
+          animation-duration: .75s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  opacity: 0;
+}
+
+.delay-1 {
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+}
+
+.delay-2 {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+
+.delay-3 {
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+}
+
+.delay-4 {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
+
+.delay-5 {
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+}
+
+.delay-6 {
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+}
+
+.delay-7 {
+  -webkit-animation-delay: 700ms;
+          animation-delay: 700ms;
+}
+
 @font-face {
   font-family: Amsterdam;
   src: url("../fonts/Amsterdam-ZVGqm.ttf");
@@ -68,7 +147,7 @@
 .btn {
   display: inline-block;
   padding: 1.5rem 3rem;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   text-transform: uppercase;
   border-radius: 50px;
   margin: 0 1rem;
@@ -108,6 +187,18 @@
 
 .btn:hover::after {
   width: 100%;
+}
+
+.mobile-nav-btn {
+  color: #fff;
+  font-size: 2.4rem;
+  position: absolute;
+  top: 50%;
+  right: 2.5rem;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  cursor: pointer;
+  visibility: hidden;
 }
 
 *,
@@ -156,6 +247,7 @@ li {
           transform: translate(-50%, -50%);
   color: #fff;
   text-align: center;
+  width: 90%;
   z-index: 1;
 }
 
@@ -240,6 +332,7 @@ li {
 }
 
 .main-nav-link {
+  display: inline-block;
   color: #f4f4f4;
   letter-spacing: 2px;
   -webkit-transition: all 0.2s;
@@ -818,6 +911,118 @@ li {
   }
   .why-work-with-me .why-work-container > *:not(:last-child) {
     margin-right: 5rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .header-text-box {
+    width: 90%;
+  }
+  .header-text-box .lg-heading {
+    font-size: 6rem;
+  }
+  .header-text-box .md-heading {
+    font-size: 3rem;
+  }
+  .btn {
+    font-size: 1.6rem;
+  }
+  .about-me {
+    padding: 16rem 0;
+    padding-bottom: 12rem;
+  }
+  .about-me-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about-me-text {
+    margin-right: 0rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about-me-text .paragraph {
+    max-width: 60rem;
+  }
+  .about-me-tech {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+    top: 2.5rem;
+    margin-top: 3rem;
+  }
+  .about-me-tech > *:not(:last-child) {
+    margin-right: 5vw;
+  }
+  .about-me-tech img {
+    width: 17.5rem;
+  }
+  .about-me hr {
+    width: 65%;
+  }
+  .skills {
+    background-attachment: scroll;
+  }
+  .skills-container > *:not(:last-child) {
+    margin-right: 3rem;
+  }
+  .skills .front-end,
+  .skills .server,
+  .skills .database,
+  .skills .deployment {
+    width: 19rem;
+    height: 32rem;
+  }
+  .skills-list {
+    line-height: 2.1;
+  }
+  .why-work-with-me .work-icon {
+    font-size: 5rem;
+  }
+  .why-work-with-me .why-work-container > *:not(:last-child) {
+    margin-right: 6rem;
+  }
+  .why-work-with-me .why-work-container h3 {
+    font-size: 1.9rem;
+  }
+  .why-work-with-me .why-work-container p {
+    margin: 0 auto;
+    max-width: 22rem;
+    font-size: 1.4rem;
+    color: #666;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header-text-box .lg-heading {
+    font-size: 4.6rem;
+  }
+  .header-text-box .md-heading {
+    font-size: 2.4rem;
+  }
+  .main-nav-list {
+    display: none;
+  }
+  .active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .mobile-nav-btn {
+    visibility: visible;
   }
 }
 /*# sourceMappingURL=main.css.map */

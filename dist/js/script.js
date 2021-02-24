@@ -34,3 +34,33 @@ $('a[href*="#"]')
     }
     }
 });
+
+
+const toggleButton = document.getElementsByClassName('mobile-nav-btn')[0];
+const navbarLinks =  document.getElementsByClassName('main-nav-list')[0];
+
+// When clicking menu item, toggle navbarlinks to display as flex items
+toggleButton.addEventListener('click', () => {
+    navbarLinks.classList.toggle('active');
+})
+
+// When clicking a navbarlink, hide the navbarlinks
+navbarLinks.addEventListener('click', () => {
+    navbarLinks.classList.toggle('active');
+})
+
+/* Mobile Navigation */
+$('.mobile-nav-btn').click(function() {
+var icon = $('.mobile-nav-btn-container i');
+
+if (icon.hasClass('fas fa-bars')) {
+    icon.removeClass('fas fa-bars');
+    icon.addClass('fas fa-times');
+    
+} else {
+    icon.removeClass('fas fa-times');
+    icon.addClass('fas fa-bars');
+}
+
+
+});

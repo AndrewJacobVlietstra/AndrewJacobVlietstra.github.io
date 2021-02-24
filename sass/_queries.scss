@@ -67,7 +67,115 @@
 // Ipad Pro
 @media only screen and (max-width: 1024px) {
 
+    .header-text-box {
 
+        width: 90%;
+    
+        .lg-heading {
+            font-size: 6rem;
+            
+        }
+        .md-heading {
+            font-size: 3rem;
+        }
+    }
+
+    .btn {font-size: 1.6rem;}
+
+
+    .about-me {
+
+        padding: 16rem 0;
+        padding-bottom: 12rem;
+
+        &-content {
+            flex-direction: column;
+        }
+
+        &-text {
+            margin-right: 0rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .paragraph {
+                max-width: 60rem;
+
+            }
+        }
+
+        &-tech {
+            display: flex;
+            justify-content: center;
+
+            position: relative;
+            top: 2.5rem;
+            margin-top: 3rem;
+
+            & > *:not(:last-child) {
+                margin-right: 5vw;
+            }
+
+            img {
+                width: 17.5rem;
+
+            }
+
+        }
+
+        hr {width: 65%;}
+
+    }
+
+
+    .skills {
+
+        background-attachment: scroll;
+        &-container {
+
+            & > *:not(:last-child) {
+                margin-right: 3rem;
+            }
+        }
+
+        .front-end,
+        .server,
+        .database,
+        .deployment {
+            width: 19rem;
+            height: 32rem;
+        }
+
+        &-list {
+            line-height: 2.1;
+        }
+    }
+
+
+    .why-work-with-me {
+
+        .work-icon {
+            font-size: 5rem;
+        }
+
+        .why-work-container {
+
+            & > *:not(:last-child) {
+                margin-right: 6rem;
+            }
+
+            h3 {
+                font-size: 1.9rem;
+            }
+    
+            p {
+                margin: 0 auto;
+                max-width: 22rem;
+                font-size: 1.4rem;
+                color: #666;
+            }
+        }
+    }
 }
 
 
@@ -78,6 +186,32 @@
 // Regular Ipad
 @media only screen and (max-width: 768px) {
 
+    .header-text-box {
+    
+        .lg-heading {
+            font-size: 4.6rem;
+            
+        }
+        .md-heading {
+            font-size: 2.4rem;
+        }
+    }
+
+
+    .main-nav {
+
+        &-list {
+            display: none;
+        }
+        
+    }
+
+    // Active class will override the initial display none on the links
+    .active {display: flex;}
+
+    .mobile-nav-btn {
+        visibility: visible;
+    }
 
 }
 
