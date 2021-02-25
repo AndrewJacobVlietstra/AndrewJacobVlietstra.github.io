@@ -909,16 +909,7 @@ li {
       justify-content: space-around;
 }
 
-@media only screen and (max-width: 1280px) {
-  .main-nav-link {
-    font-size: 1.4rem;
-  }
-  .header-text-box .lg-heading {
-    font-size: 4.9rem;
-  }
-  .header-text-box .md-heading {
-    font-size: 3rem;
-  }
+@media only screen and (max-width: 1400px) {
   .about-me-text {
     padding: 0 2rem;
     margin-right: 1rem;
@@ -930,6 +921,36 @@ li {
     position: relative;
     top: 2.5rem;
     padding: 0 2rem;
+  }
+  .about-me-tech img {
+    width: 16rem;
+  }
+  .about-me hr {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .main-nav-link {
+    font-size: 1.4rem;
+  }
+  .header-text-box .lg-heading {
+    font-size: 4.9rem;
+  }
+  .header-text-box .md-heading {
+    font-size: 3rem;
+  }
+  .about-me-text {
+    padding: 0 5rem;
+    margin-right: 1rem;
+  }
+  .about-me-text .paragraph {
+    max-width: 47rem;
+  }
+  .about-me-tech {
+    position: relative;
+    top: 2.5rem;
+    padding: 0 5rem;
   }
   .about-me-tech img {
     width: 17.5rem;
