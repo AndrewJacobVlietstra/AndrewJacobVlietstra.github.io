@@ -117,8 +117,8 @@
           animation-duration: .6s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
   opacity: 0;
 }
 
@@ -920,6 +920,7 @@ li {
     font-size: 3rem;
   }
   .about-me-text {
+    padding: 0 2rem;
     margin-right: 7.5rem;
   }
   .about-me-text .paragraph {
@@ -928,6 +929,7 @@ li {
   .about-me-tech {
     position: relative;
     top: 2.5rem;
+    padding: 0 2rem;
   }
   .about-me-tech img {
     width: 17.5rem;
