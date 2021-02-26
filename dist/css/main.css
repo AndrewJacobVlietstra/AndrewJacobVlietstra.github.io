@@ -642,10 +642,11 @@ li {
 
 .card__text {
   font-family: 'Lato';
-  text-align: center;
+  text-align: left;
   font-size: 1.4rem;
   line-height: 1.6;
   letter-spacing: 1px;
+  padding: 0 1rem;
 }
 
 .card-btn {
