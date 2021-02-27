@@ -813,6 +813,12 @@ li {
   color: #1383db;
   font-size: 6rem;
   margin-bottom: 1rem;
+  -webkit-transition: all .25s;
+  transition: all .25s;
+}
+
+.why-work-with-me .work-icon:hover {
+  color: #12a5e9;
 }
 
 .why-work-with-me .why-work-container {
