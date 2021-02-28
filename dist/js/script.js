@@ -1,3 +1,4 @@
+
 /* Navigation Smooth Scroll on buttons */
 
 // Select all links with hashes

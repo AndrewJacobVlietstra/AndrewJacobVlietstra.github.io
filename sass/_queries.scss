@@ -528,7 +528,14 @@
 
         .footer-items {
             margin-bottom: 2rem;
+
+            .footer-links {
+                position: relative;
+                top: .3rem;
+            }
         }
+
+        
 
         .copyright {
             padding: 1rem;

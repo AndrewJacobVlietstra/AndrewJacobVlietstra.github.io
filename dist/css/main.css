@@ -233,6 +233,7 @@
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -240,6 +241,7 @@ body {
   font-family: 'Lato', Arial, sans-serif;
   background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(rgba(19, 131, 219, 0.9)));
   background-image: linear-gradient(white, rgba(19, 131, 219, 0.9));
+  overflow-x: hidden;
 }
 
 a {
@@ -1301,6 +1303,10 @@ li {
   }
   .footer .footer-items {
     margin-bottom: 2rem;
+  }
+  .footer .footer-items .footer-links {
+    position: relative;
+    top: .3rem;
   }
   .footer .copyright {
     padding: 1rem;

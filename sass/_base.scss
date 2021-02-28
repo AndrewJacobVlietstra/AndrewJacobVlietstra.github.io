@@ -9,12 +9,14 @@
 
 html {
     font-size: 62.5%; // 1rem = 10px
+    overflow-x: hidden;
 }
 
 body {
     padding: 4rem;
     font-family: 'Lato', Arial, sans-serif;
     background-image: linear-gradient(rgba($white-color, 1), rgba($primary-blue, .9));
+    overflow-x: hidden;
 }
 
 a {
