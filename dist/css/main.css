@@ -375,6 +375,11 @@ li {
           transform: translateY(-2px);
 }
 
+.main-nav-link:active {
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+}
+
 .main-nav .logo {
   position: absolute;
   top: 0;

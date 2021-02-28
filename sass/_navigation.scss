@@ -43,9 +43,11 @@
 
         &:hover {
             color: #06affd;
-            transform: translateY(-2px);
+            transform: translateY(-2px);  
+        }
 
-            
+        &:active {
+            transform: translateY(1px);
         }
     }
 
