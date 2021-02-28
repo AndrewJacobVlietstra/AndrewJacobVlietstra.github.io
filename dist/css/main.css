@@ -916,6 +916,18 @@ li {
       justify-content: space-around;
 }
 
+@media only screen and (min-width: 2560px) {
+  .header-text-box .lg-heading {
+    font-size: 8rem;
+  }
+  .header-text-box .md-heading {
+    font-size: 4rem;
+  }
+  .btn {
+    font-size: 1.6rem;
+  }
+}
+
 @media only screen and (max-width: 1400px) {
   .about-me-text {
     padding: 0 2rem;

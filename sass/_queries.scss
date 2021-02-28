@@ -1,3 +1,22 @@
+// 2K Screens
+@media only screen and (min-width: 2560px) {
+
+    .header-text-box {
+    
+        .lg-heading {
+            font-size: 8rem;
+            
+        }
+        .md-heading {
+            font-size: 4rem;
+        }
+    }
+
+    .btn {font-size: 1.6rem;}
+
+
+}
+
 // Larger Laptops
 @media only screen and (max-width: 1400px) {
 
