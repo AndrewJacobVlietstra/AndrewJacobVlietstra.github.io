@@ -7,6 +7,11 @@
     box-sizing: border-box;
 }
 
+::selection {
+    background: rgba(62, 241, 241, .6);
+    color: orangered;
+}
+
 html {
     font-size: 62.5%; // 1rem = 10px
     overflow-x: hidden;
