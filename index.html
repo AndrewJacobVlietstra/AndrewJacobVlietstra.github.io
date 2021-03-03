@@ -40,7 +40,7 @@
 
             <div class="header-text-box fadeInLong">
                 <h1 class="lg-heading">Andrew Vlietstra</h1>
-                <h2 class="md-heading md-mb">Front End Developer</h2>
+                <h2 class="md-heading md-mb">I'm a <span class="type"></span></h2>
                 <a href="#about" class="btn btn--light">About Me</a>
                 <a href="#projects" class="btn btn--light">My Projects</a>
             </div>
@@ -321,6 +321,30 @@
 
         <!-- JQuery -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+        <!-- Link typed.js -->
+        <script src="dist/js/typed.js"></script>
+        <script>
+            var typed = new Typed('.type', {
+                strings: [
+                    //^2000 waits 2000ms before continuing
+                    '^2400 Front End Developer ^2400',
+                    '^500 &lt; Programmer &sol;&gt; ^1800', 
+                    '^1000 Creative Person ^1700',
+                    '^1100 Pasionte ^200',
+                    '^100 Passionate Learner ^1700'],
+                typeSpeed: 65,
+                backSpeed: 50,
+                startDelay: 0,
+                backDelay: 0, // in miliseconds
+                smartBackspace: false, // Default value
+                shuffle: false,
+                showCursor: false,
+                cursorChar: '|',
+                autoInsertCss: false,
+                loop: true,
+                loopCount: Infinity
+            });
+        </script>
         <!-- My Script -->
         <script src="dist/js/script.js"></script>
         <!-- Link & activate wow.js -->

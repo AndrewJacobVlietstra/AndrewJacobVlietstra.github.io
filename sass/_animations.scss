@@ -43,6 +43,30 @@
     }
 }
 
+@keyframes blinkingCursor{
+    50% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes flipXDirection {
+    0% {
+        transform: scale(1,1);
+    }
+
+    50% {
+        transform: scale(-1,1);
+    }
+
+    100% {
+        transform: scale(1,1);
+    }
+}
+
 .delay-1 {animation-delay: 100ms;}
 .delay-2 {animation-delay: 200ms;}
 .delay-3 {animation-delay: 300ms;}
@@ -67,4 +91,11 @@
     animation-fill-mode: forwards;
     animation-timing-function: ease-out;
     opacity: 0;
+}
+
+.flipXDirection {
+    animation-name: flipXDirection;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    perspective: 150rem;
 }

@@ -23,7 +23,17 @@
     .md-heading {
         font-size: 3rem;
         font-weight: 400;
+        letter-spacing: 10px;
+    }
+
+    h2 span { // controls typed.js text style
+        color: #fff;
+        // color: rgb(43, 255, 255);
         
+    }
+
+    .typed-cursor {
+        //animation: blinkingCursor 1.05s infinite; //css causes some weird blurring issue with surrounding text
     }
 }
 
@@ -42,5 +52,4 @@
     object-fit: cover;
     animation: animateHueRotate 60s ease infinite;
     z-index: -1;
-    
 }

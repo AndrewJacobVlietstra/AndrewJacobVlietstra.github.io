@@ -1,6 +1,4 @@
-
 /* Navigation Smooth Scroll on buttons */
-
 // Select all links with hashes
 $('a[href*="#"]')
 // Remove links that don't actually link to anything
@@ -55,16 +53,14 @@ navbarLinks.addEventListener('click', () => {
 
 // Change Mobile Nav Button Icon
 $('.mobile-nav-btn').click(function() {
-var icon = $('.mobile-nav-btn-container i');
+    var icon = $('.mobile-nav-btn-container i');
 
-if (icon.hasClass('fas fa-bars')) {
-    icon.removeClass('fas fa-bars');
-    icon.addClass('fas fa-times');
-    
-} else {
-    icon.removeClass('fas fa-times');
-    icon.addClass('fas fa-bars');
-}
-
-
+    if (icon.hasClass('fas fa-bars')) {
+        icon.removeClass('fas fa-bars');
+        icon.addClass('fas fa-times');
+        
+    } else {
+        icon.removeClass('fas fa-times');
+        icon.addClass('fas fa-bars');
+    }
 });
