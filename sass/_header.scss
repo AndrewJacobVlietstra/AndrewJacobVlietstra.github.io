@@ -28,12 +28,12 @@
 
     h2 span { // controls typed.js text style
         color: #fff;
-        // color: rgb(43, 255, 255);
-        
+        color: rgb(43, 255, 255);
+        font-weight: 900;
     }
 
     .typed-cursor {
-        //animation: blinkingCursor 1.05s infinite; //css causes some weird blurring issue with surrounding text
+        // animation: blinkingCursor 1.05s infinite; //css causes some weird blurring issue with surrounding text
     }
 }
 
