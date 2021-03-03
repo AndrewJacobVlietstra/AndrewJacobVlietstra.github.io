@@ -364,7 +364,7 @@ li {
 .header-text-box h2 span {
   color: #73f8ff;
   font-weight: 900;
-  text-shadow: 0 0.5rem 0.85rem black;
+  text-shadow: 0 0.5rem 0.85rem rgba(0, 0, 0, 0.9);
 }
 
 .bg-video {
