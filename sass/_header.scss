@@ -27,9 +27,12 @@
     }
 
     h2 span { // controls typed.js text style
+        color: aqua;
         // color: #fff;
-        color: rgb(43, 255, 255);
         font-weight: 900;
+        // -webkit-text-stroke-width: .6px;
+        // -webkit-text-stroke-color: rgb(0, 100, 100);
+        
     }
 
     .typed-cursor {
