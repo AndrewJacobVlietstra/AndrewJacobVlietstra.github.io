@@ -362,9 +362,16 @@ li {
 }
 
 .header-text-box h2 span {
-  color: #73f8ff;
+  color: #fff;
   font-weight: 900;
-  text-shadow: 0 0.5rem 0.85rem rgba(0, 0, 0, 0.9);
+  text-shadow: 0 0.45rem 0.65rem rgba(0, 0, 0, 0.9);
+  -webkit-transition: all .25s;
+  transition: all .25s;
+}
+
+.header-text-box h2 span:hover {
+  color: #68dcff;
+  cursor: pointer;
 }
 
 .bg-video {
