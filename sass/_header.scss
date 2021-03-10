@@ -42,6 +42,7 @@
     }
 
     .typed-cursor {
+        color: inherit;
         // animation: blinkingCursor 1.05s infinite; //css causes some weird blurring issue with surrounding text
     }
 }

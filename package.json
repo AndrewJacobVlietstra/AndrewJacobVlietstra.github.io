@@ -1,0 +1,22 @@
+{
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "description": "This is my portfolio for showcasing my latest and greatest work!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndrewJacobVlietstra/AndrewJacobVlietstra.github.io.git"
+  },
+  "author": "Andrew Vlietstra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndrewJacobVlietstra/AndrewJacobVlietstra.github.io/issues"
+  },
+  "homepage": "https://github.com/AndrewJacobVlietstra/AndrewJacobVlietstra.github.io#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
