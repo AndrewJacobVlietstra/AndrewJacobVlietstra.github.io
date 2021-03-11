@@ -76,8 +76,8 @@ gulp.task('minifyjs', function(){
 // Concatenate JS files, must use: npm install --save-dev gulp-concat
 gulp.task('scripts', function(done){
     gulp.src('src/js/*.js')
-        .pipe(concat('main.js'))
-        .pipe(uglify())
+        // .pipe(concat('main.js'))
+        // .pipe(uglify())
         .pipe(gulp.dest('dist/js'))
         done();
 });
