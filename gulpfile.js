@@ -2,6 +2,7 @@ const gulp = require('gulp');
 const imagemin = require('gulp-imagemin');
 const uglify = require('gulp-uglify');
 const sass = require('gulp-sass');
+const autoprefixer = require('gulp-autoprefixer');
 const concat = require('gulp-concat');
 
 /*
@@ -20,11 +21,21 @@ gulp.task('message', function() {
     return console.log('Gulp is running');
 });
 
+// Autoprefixer, must use: npm install --save-dev gulp-autoprefixer
+exports.default = () => (
+    gulp.src('src/app.css')
+        .pipe(autoprefixer({
+            cascade: false
+        }))
+        .pipe(gulp.dest('dist'))
+);
+
 
 // Compile Sass, must use: npm install --save-dev gulp-sass
 gulp.task('sass', function(){
     gulp.src('src/sass/*.scss')
         .pipe(sass().on('error', sass.logError))
+        .pipe(autoprefixer())
         .pipe(gulp.dest('dist/css'))
 });
 
