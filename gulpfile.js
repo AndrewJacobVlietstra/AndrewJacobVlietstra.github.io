@@ -2,8 +2,14 @@ const gulp = require('gulp');
 const imagemin = require('gulp-imagemin');
 const uglify = require('gulp-uglify');
 const sass = require('gulp-sass');
-const autoprefixer = require('gulp-autoprefixer');
+const prefix = require('gulp-autoprefixer'); // Autoprefixer, must use: npm install --save-dev gulp-autoprefixer
+const cssmin = require('gulp-cssnano');
 const concat = require('gulp-concat');
+const rename = require('gulp-rename');
+// const plumber = require('gulp-plumber');
+// const notify = require('gulp-notify');
+// const sassLint = require('gulp-sass-lint');
+// const sourcemaps = require('gulp-sourcemaps');
 
 /*
 
@@ -21,21 +27,16 @@ gulp.task('message', function() {
     return console.log('Gulp is running');
 });
 
-// Autoprefixer, must use: npm install --save-dev gulp-autoprefixer
-exports.default = () => (
-    gulp.src('src/app.css')
-        .pipe(autoprefixer({
-            cascade: false
-        }))
-        .pipe(gulp.dest('dist'))
-);
-
 
 // Compile Sass, must use: npm install --save-dev gulp-sass
 gulp.task('sass', function(){
     gulp.src('src/sass/*.scss')
-        .pipe(sass().on('error', sass.logError))
-        .pipe(autoprefixer())
+        .pipe(sass())
+        .pipe(prefix())
+        .pipe(rename('main.css'))
+        .pipe(gulp.dest('dist/css'))
+        .pipe(cssmin())
+        .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('dist/css'))
 });
 
