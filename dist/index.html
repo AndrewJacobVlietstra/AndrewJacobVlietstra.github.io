@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="I'm a front end focused developer who loves to learn and build creative projects.">
+        <title>Andrew Vlietstra | Front End Developer</title>
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="css/main.min.css">
+        <!-- Link Animate.css style sheet from wow.js zip file -->
+        <link rel="stylesheet" href="css/animate.css" type="text/css">
+        <!-- Favicon -->
+        <link rel="icon" href="img/AJV Favicon.png">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;600;900&family=Raleway:wght@300;500;700&display=swap" rel="stylesheet">
+        <!-- Font Awesome Icons -->
+        <script src="https://kit.fontawesome.com/4cdda27375.js" crossorigin="anonymous"></script>
+    </head>
+
+
+    <body>
+        
+        <header id="home" class="main-header">
+
+            <nav class="main-nav">
+                <a class="mobile-nav-btn-container"><i class="fas fa-bars mobile-nav-btn"></i></a>
+                <ul class="main-nav-list">
+                    <a class="logo fadeInLong">AJV</a>
+                    <li class="main-nav-item fadeInRightDelay delay-1"><a href="#home" class="main-nav-link">Home</a></li>
+                    <li class="main-nav-item fadeInRightDelay delay-2"><a href="#about" class="main-nav-link">About Me</a></li>
+                    <li class="main-nav-item fadeInRightDelay delay-3"><a href="#projects" class="main-nav-link">Projects</a></li>
+                    <li class="main-nav-item fadeInRightDelay delay-4"><a href="#skills" class="main-nav-link">Skills</a></li>
+                    <li class="main-nav-item fadeInRightDelay delay-5"><a href="#why-work-with-me" class="main-nav-link">Work With Me</a></li>
+                    <li class="main-nav-item fadeInRightDelay delay-6"><a href="My-Resume.pdf" class="main-nav-link" target="_blank">Resume <i class="fas fa-download icon"></i></a></li>
+                </ul>
+            </nav>
+
+            <div class="header-text-box fadeInLong">
+                <h1 class="lg-heading">Andrew Vlietstra</h1>
+                <h2 class="md-heading md-mb">I'm a <span class="type"></span></h2>
+                <a href="#about" class="btn btn--light">About Me</a>
+                <a href="#projects" class="btn btn--light">My Projects</a>
+            </div>
+
+            <div class="bg-video">
+                <video class="bg-video__content" autoplay loop autobuffer muted playsinline>
+                    <source src="img/TheDriveVisualDon.mp4" type="video/mp4"/>
+                    <source src="img/TheDriveVisualDon.webm" type="video/webm"/>
+                        Your browser is not Supported!
+                </video>
+            </div>
+
+        </header>
+
+
+        <main>
+            <section id="about" class="about-me">
+                <h2 class="section-heading center-text xlg-mb">About Me</h2>
+                <div class="about-me-content">
+                    <div class="about-me-text">
+                        <h1 class="sub-heading wow fadeInLeft" data-wow-duration="1.8s" data-wow-delay=".4s">Who am I?</h1>
+                        <hr class="wow fadeInLeft" data-wow-duration="1.8s" data-wow-delay=".4s">
+                        <p class="paragraph wow fadeInLeft" data-wow-duration="1.75s" data-wow-delay="1s" data-wow-offset="140">
+                            I'm a front end focused developer who loves to learn and build creative projects.
+                            In my spare time I enjoy teaching myself more about web development and coming up with new creative ideas. 
+                            I like to build challenging projects that I can learn a lot from.
+                        </p>
+                    </div>
+                    <div class="about-me-tech wow fadeInRight" data-wow-duration="2s" data-wow-delay="1s" data-wow-offset="140">
+                        <img src="img/html5.png" alt="HTML5">
+                        <img src="img/css3.png" alt="CSS3">
+                        <img src="img/javascript.png" alt="JavaScript">
+                    </div>
+                </div>
+            </section>
+    
+    
+            <section id="projects" class="projects">
+                <h2 class="section-heading center-text xlg-mb">Projects</h2>
+                <div class="projects-container">
+
+                    <div class="card wow fadeIn" data-wow-duration="1s" data-wow-delay=".5s" data-wow-offset="160">
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--1">
+                                <div>
+                                    <img src="img/money.gif" class="gif-picture" alt="Money GIF">
+                                </div>
+                            </div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span card__heading-span--1">Nexter</span>
+                            </h4>
+                            <div class="card__details">
+                                <ul>
+                                    <li>Semantic HTML5 <i class="fab fa-html5 project-icon"></i></li>
+                                    <li>Responsive CSS3 <i class="fab fa-css3-alt project-icon"></i></li>
+                                    <li>JavaScript <i class="fab fa-js project-icon"></i></li>
+                                    <li>Sass <i class="fab fa-sass project-icon"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back card__side--back-1">
+                            <div class="card__cta">
+                                <div class="card__text-box">
+                                    <p class="card__text">
+                                        A real estate website, specializing only in the best realtors.
+                                        This is my most recent project. This website uses a combination of Flexbox and
+                                        Grid. But it also implements more advanced CSS techniques, such as creating a responsive
+                                        grid without using media queries.
+                                    </p>
+                                </div>
+                                <a href="https://andrewjacobvlietstra.github.io/Nexter-project/" target="_blank" class="btn btn--light card-btn">See Project</a>
+                                <a href="https://github.com/AndrewJacobVlietstra/Nexter-project" target="_blank" class="btn btn--light card-btn">View Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card wow fadeIn" data-wow-duration="1s" data-wow-delay=".5s" data-wow-offset="160">
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--2">
+                                <div>
+                                    <img src="img/stocks.gif" class="gif-picture" alt="Money GIF">
+                                </div>
+                            </div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span card__heading-span--2">Crypto City</span>
+                            </h4>
+                            <div class="card__details">
+                                <ul>
+                                    <li>Semantic HTML5 <i class="fab fa-html5 project-icon"></i></li>
+                                    <li>Responsive CSS3 <i class="fab fa-css3-alt project-icon"></i></li>
+                                    <li>JavaScript <i class="fab fa-js project-icon"></i></li>
+                                    <li>Sass <i class="fab fa-sass project-icon"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back card__side--back-2">
+                            <div class="card__cta">
+                                <div class="card__text-box">
+                                    <p class="card__text">
+                                        A crypto currency exchange/business consulting website.
+                                        This is my third personal project. I learned a ton about 
+                                        using Flexbox in this project and how to position content on the main and cross axes.
+                                        As well as flex commands like justify-content and align-items.
+                                    </p>
+                                </div>
+                                <a href="https://andrewjacobvlietstra.github.io/crypto-city-project/" target="_blank" class="btn btn--light card-btn">See Project</a>
+                                <a href="https://github.com/AndrewJacobVlietstra/crypto-city-project" target="_blank" class="btn btn--light card-btn">View Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card wow fadeIn" data-wow-duration="1s" data-wow-delay=".5s" data-wow-offset="160">
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--3">
+                                <div>
+                                    <img src="img/house.gif" class="gif-picture" alt="Money GIF">
+                                </div>
+                            </div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span card__heading-span--3">Condor Renovations</span>
+                            </h4>
+                            <div class="card__details">
+                                <ul>
+                                    <li>Semantic HTML5 <i class="fab fa-html5 project-icon"></i></li>
+                                    <li>Responsive CSS3 <i class="fab fa-css3-alt project-icon"></i></li>
+                                    <li>JavaScript <i class="fab fa-js project-icon"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back card__side--back-3">
+                            <div class="card__cta">
+                                <div class="card__text-box">
+                                    <p class="card__text">
+                                        A home renovations website.
+                                        This is my second personal project. I learned a lot about using CSS Grid
+                                        and also how to change its template on smaller screens with media queries.
+                                    </p>
+                                </div>
+                                <a href="https://andrewjacobvlietstra.github.io/home-renovation-project/" target="_blank" class="btn btn--light card-btn">See Project</a>
+                                <a href="https://github.com/AndrewJacobVlietstra/home-renovation-project" target="_blank" class="btn btn--light card-btn">View Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card wow fadeIn" data-wow-duration="1s" data-wow-delay=".5s" data-wow-offset="160">
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--4">
+                                <div>
+                                    <img src="img/fire.gif" class="gif-picture" alt="Money GIF">
+                                </div>
+                            </div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span card__heading-span--4">Envision Fitness</span>
+                            </h4>
+                            <div class="card__details">
+                                <ul>
+                                    <li>Semantic HTML5 <i class="fab fa-html5 project-icon"></i></li>
+                                    <li>Responsive CSS3 <i class="fab fa-css3-alt project-icon"></i></li>
+                                    <li>JavaScript <i class="fab fa-js project-icon"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back card__side--back-4">
+                            <div class="card__cta">
+                                <div class="card__text-box">
+                                    <p class="card__text">
+                                        A gym website focusing on health and fitness. 
+                                        This was my first personal project I made.
+                                        I used basic HTML and CSS techniques such as structuring the web page with rows and columns.
+                                    </p>
+                                </div>
+                                <a href="https://andrewjacobvlietstra.github.io/gym-project/" target="_blank" class="btn btn--light card-btn">See Project</a>
+                                <a href="https://github.com/AndrewJacobVlietstra/gym-project" target="_blank" class="btn btn--light card-btn">View Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+    
+    
+            <section id="skills" class="skills">
+                <div class="skills-container">
+                    <div class="front-end wow fadeInRight" data-wow-duration="1s" data-wow-delay=".6s" data-wow-offset="120">
+                        <i class="fas fa-laptop-code skills-icon"></i>
+                        <h2 class="skills-sub-heading">Front End</h2>
+                        <ul class="skills-list">
+                            <li class="skills-item">HTML5</li>
+                            <li class="skills-item">CSS3 / Sass</li>
+                            <li class="skills-item">JavaScript</li>
+                            <!-- <li class="skills-item">React / Redux</li> -->
+                        </ul>
+                    </div>
+                    <div class="server wow fadeInRight" data-wow-duration="1s" data-wow-delay=".7s" data-wow-offset="120">
+                        <i class="fas fa-server skills-icon"></i>
+                        <h2 class="skills-sub-heading">Server</h2>
+                        <ul class="skills-list">
+                            <li class="skills-item">Node.JS</li>
+                            <!-- <li class="skills-item">SQL</li> -->
+                            <li class="skills-item">PHP</li>
+                            <!-- <li class="skills-item">Python</li> -->
+                        </ul>
+                    </div>
+                    <div class="database wow fadeInRight" data-wow-duration="1s" data-wow-delay=".8s" data-wow-offset="120">
+                        <i class="fas fa-database skills-icon"></i>
+                        <h2 class="skills-sub-heading">Database</h2>
+                        <ul class="skills-list">
+                            <li class="skills-item">Mongo DB</li>
+                            <li class="skills-item">MySQL</li>
+                        </ul>
+                    </div>
+                    <div class="deployment wow fadeInRight" data-wow-duration="1s" data-wow-delay=".9s" data-wow-offset="120">
+                        <i class="fas fa-cloud-upload-alt skills-icon"></i>
+                        <h2 class="skills-sub-heading">Deployment</h2>
+                        <ul class="skills-list">
+                            <li class="skills-item">Git</li>
+                            <li class="skills-item">Netlify</li>
+                            <!-- <li class="skills-item">Docker</li> -->
+                        </ul>
+                    </div>
+                </div>
+            </section>
+    
+    
+            <section id="why-work-with-me" class="why-work-with-me">
+                <h2 class="section-heading">Why work with me?</h2>
+                <hr>
+                <p class="section-paragraph">There are many advantages to working with me. Here are a few:</p>
+                <div class="why-work-container">
+
+                    <div class="passion wow fadeInUp" data-wow-duration="2s" data-wow-delay=".4s">
+                        <i class="fas fa-code fa-3x work-icon"></i>
+                        <h3>Passionate About Development</h3>
+                        <p>Big believer in the fact that the greatest work is done by passionate people.</p>
+                    </div>
+                
+                    <div class="adaptable wow fadeInUp" data-wow-duration="2s" data-wow-delay=".4s">
+                        <i class="fas fa-users fa-3x work-icon"></i>
+                        <h3>Adaptable</h3>
+                        <p>Confident in my ability to learn something new and put it into practice.</p>
+                    </div>
+                  
+                    <div class="quick-learner wow fadeInUp" data-wow-duration="2s" data-wow-delay=".4s">
+                        <i class="fab fa-leanpub fa-3x work-icon"></i>
+                        <h3>Quick Learner</h3>
+                        <p>Always excited to learn new things. I thrive on tinkering with new ideas and creative projects.</p>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+
+
+        <footer id="footer" class="footer">
+            <div class="footer-container wow fadeIn" data-wow-duration="2s" data-wow-delay=".9s" data-wow-offset="100">
+                <div class="row">
+                    <a class="logo">AJV</a>
+                </div>
+    
+                <div class="row row-links">
+                    <ul class="footer-list">
+                        <li class="footer-items"><a href="https://www.linkedin.com/in/andrew-vlietstra-3aab6917b/" target="_blank" class="footer-links">LinkedIn</a></li>
+                        <li class="footer-items"><a href="https://github.com/AndrewJacobVlietstra" target="_blank" class="footer-links">GitHub</a></li>
+                        <li class="footer-items"><a href="My-Resume.pdf" target="_blank" class="footer-links">Resume</a></li>
+                    </ul>
+    
+                    <ul class="footer-list">
+                        Site made by <a class="footer-links">Andrew Vlietstra</a>
+                    </ul>
+                </div>
+    
+                <div class="row">
+                    <p class="copyright">
+                        &copy; Copyright 2021 Andrew Vlietstra. All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- JQuery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+        <!-- Link main.js script -->
+        <script src="js/main.js"></script>
+        <script>
+            var typed = new Typed('.type', {
+                strings: [
+                    //^2000 waits 2000ms before continuing
+                    '^1000 Front End Developer ^2500',
+                    '^500 Programmer ^2000', 
+                    '^1000 Creative Person ^1850',
+                    '^1000 Pasionte ^150',
+                    '^90 Passionate Learner ^1800'],
+                typeSpeed: 65,
+                backSpeed: 50,
+                startDelay: 1400,
+                backDelay: 0, // in miliseconds
+                smartBackspace: false, // Default value
+                shuffle: false,
+                showCursor: false,
+                autoInsertCss: false,
+                cursorChar: '|',
+                loop: true,
+            });
+        </script>
+        <script>new WOW().init();</script>
+    </body>
+</html>
