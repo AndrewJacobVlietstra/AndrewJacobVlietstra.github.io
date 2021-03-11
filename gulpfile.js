@@ -71,7 +71,7 @@ gulp.task('watch', function(){
     gulp.watch('src/js/*.js', ['scripts']);
     gulp.watch('src/images/*', ['imageMin']);
     gulp.watch('src/sass/*.scss', ['sass']);
-    gulp.watch('src/*.html', ['copyHTML']);
+    gulp.watch('src/*.html', ['copyhtml']);
 });
 
 // This is an example of default: gulp
