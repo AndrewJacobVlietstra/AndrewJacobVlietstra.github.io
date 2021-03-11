@@ -22,6 +22,9 @@ const rename = require('gulp-rename');
 
 */
 
+
+/* SUB-TASKS  */
+
 // Logs Message - test task
 gulp.task('message', function() {
     return console.log('Gulp is running');
@@ -86,6 +89,12 @@ gulp.task('watch', function(){
     gulp.watch('src/*.html', ['copyhtml']);
 });
 
-// This is an example of default: gulp
-// But watch is prob just easier to use, instead of typing gulp all the time :)
-gulp.task('default', ['copyhtml', 'imageMin', 'scripts', 'sass']);
+/*  BUILD TASKS */
+
+gulp.task('default', function(done) {
+    runSequence('copyhtml', 'sass', 'scripts', 'watch', done);
+});
+
+gulp.task('build', function(done) {
+    runSequence('sass', done);
+});
