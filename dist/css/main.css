@@ -353,10 +353,11 @@ li {
       color: #666; }
   .about-me-tech {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center; }
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center; 
+  }
     .about-me-tech img {
-      width: 20rem;
+      width: 18rem;
       filter: drop-shadow(0 0.6rem 1rem #222);
       transition: all 0.25s; }
       .about-me-tech img:hover {
@@ -780,6 +781,8 @@ li {
     visibility: visible; } }
 
 @media only screen and (max-width: 768px) {
+  .about-me-tech  {left: 2rem;}
+  .about-me-tech img {margin-left: -5rem;}
   .header-text-box .lg-heading {
     font-size: 4.6rem; }
   .header-text-box .md-heading {
@@ -851,6 +854,8 @@ li {
   body {
     padding: 0rem;
     overflow-x: hidden; }
+  .about-me-tech  {left: 1.7rem;}
+  .about-me-tech img {margin-left: -4rem;}
   .header-text-box {
     width: 100%;
     top: 45%; }
