@@ -525,6 +525,33 @@ li {
 .fa-sass {
   color: #ff4363; }
 
+/* Scroll Bar Styling */
+
+/* width */
+::-webkit-scrollbar {
+  width: 19px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #333;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(225deg, #5dc0c4 0%, #166f8a 100%);
+  border-radius: 30px;
+  border: 5px solid #333;
+  transition: all .3s;
+}
+
+/* Handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {} */
+
+::-webkit-scrollbar-corner {
+  background: #333;
+}
+
 .skills {
   height: 80vh;
   background-image: linear-gradient(rgba(82, 30, 179, 0.6), rgba(30, 144, 255, 0.5)), url("../img/skills-bg2.jpg");
