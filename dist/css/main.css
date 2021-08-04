@@ -555,7 +555,7 @@ li {
 .skills {
   height: 80vh;
   background-image: linear-gradient(rgba(82, 30, 179, 0.6), rgba(30, 144, 255, 0.5)), url("../img/skills-bg2.jpg");
-  background-position: bottom;
+  background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
