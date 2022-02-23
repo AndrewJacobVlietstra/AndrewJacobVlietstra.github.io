@@ -499,6 +499,9 @@ li {
 .card__side--back-4 {
   background-image: linear-gradient(to right bottom, #df3124, black);
 }
+.card__side--back-5 {
+  background-image: linear-gradient(to top, aqua, black);
+}
 .card:hover .card__side--front,
 .card:active .card__side--front {
   transform: rotateY(-180deg);
@@ -555,6 +558,13 @@ li {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.card__picture--5 {
+  background-image: linear-gradient(to bottom, aqua, black),
+    url('https://static1.srcdn.com/wordpress/wp-content/uploads/2020/10/unova-hat-ash-pikachu.jpg?q=50&fit=crop&w=960&h=500&dpr=1.5');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .card__heading {
   font-size: 2.8rem;
   font-weight: 300;
@@ -597,6 +607,14 @@ li {
   background-image: linear-gradient(
     to right bottom,
     rgba(223, 49, 36, 0.95),
+    rgba(0, 0, 0, 0.9)
+  );
+}
+.card__heading-span--5 {
+  word-spacing: 4px;
+  background-image: linear-gradient(
+    to bottom,
+    aqua,
     rgba(0, 0, 0, 0.9)
   );
 }
@@ -662,6 +680,10 @@ li {
   font-size: 2.75rem;
   position: relative;
   top: 0.3rem;
+}
+
+.fa-react {
+  color: #00D7FD;
 }
 
 .fa-html5 {
