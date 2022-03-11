@@ -391,11 +391,11 @@ li {
   letter-spacing: 2px;
   transition: all 0.2s;
 }
-.main-nav-link:hover {
+.main-nav-link-container:hover .main-nav-link {
   color: #06affd;
   transform: translateY(-2px);
 }
-.main-nav-link:active {
+.main-nav-link-container:active .main-nav-link {
   transform: translateY(1px);
 }
 .main-nav .logo {
