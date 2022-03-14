@@ -503,6 +503,9 @@ li {
   background-image: linear-gradient(to top, aqua, black);
 }
 .card__side--back-6 {
+  background-image: linear-gradient(to top, #003363, black);
+}
+.card__side--back-7 {
   background-image: linear-gradient(to top, grey, black);
 }
 .card:hover .card__side--front,
@@ -550,6 +553,9 @@ li {
   padding-top: 4px;
   color: #6358F7;
 }
+.bitcoin-image {
+  width: 8.5rem !important;
+}
 .card__picture--1 {
   background-image: linear-gradient(
       to top,
@@ -590,6 +596,13 @@ li {
   background-size: cover;
 }
 .card__picture--6 {
+  background-image: linear-gradient(to top, #333, #0063c0),
+    url('https://www.interactivebrokers.com/images/web/cryptocurrency-hero.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card__picture--7 {
   background-image: linear-gradient(to top, rgb(197, 170, 170), black),
     url('https://i.ibb.co/GCCdy8t/womens.png');
   background-position: center;
@@ -650,6 +663,14 @@ li {
   );
 }
 .card__heading-span--6 {
+  word-spacing: 4px;
+  background-image: linear-gradient(
+    to right,
+    #003363,
+    rgba(0, 0, 0, 0.9)
+  );
+}
+.card__heading-span--7 {
   word-spacing: 4px;
   background-image: linear-gradient(
     to right,
