@@ -64,3 +64,9 @@ $('.mobile-nav-btn').click(function() {
         icon.addClass('fas fa-bars');
     }
 });
+
+// Keep copyright year up to date
+const currentYearElement = document.querySelector('.current-year');
+const currentYear = new Date().getFullYear();
+
+currentYearElement.innerHTML = currentYear;
