@@ -272,6 +272,7 @@
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -511,12 +512,15 @@ li {
 .card__side--back-8 {
   background-image: linear-gradient(to top, #21294f, black);
 }
+
 .card:hover .card__side--front,
-.card:active .card__side--front {
+.card:active .card__side--front,
+.card:focus-within .card__side--front {
   transform: rotateY(-180deg);
 }
 .card:hover .card__side--back,
-.card:active .card__side--back {
+.card:active .card__side--back,
+.card:focus-within .card__side--back {
   transform: rotateY(0deg);
 }
 .card__picture {
