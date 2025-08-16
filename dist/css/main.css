@@ -661,7 +661,7 @@ li {
 	background-size: cover;
 }
 .card__picture--6 {
-	background-image: linear-gradient(to top, #222, #fff895d3),
+	background-image: linear-gradient(to top right, #333, #000),
 		url("../img/different_weather.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
