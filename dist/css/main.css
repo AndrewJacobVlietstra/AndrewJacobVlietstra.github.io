@@ -290,6 +290,13 @@ li {
 	list-style: none;
 }
 
+.list-items-centered {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+}
+
 .section-heading {
 	font-family: "Raleway", "Lato", Arial, Helvetica, sans-serif;
 	font-size: 4rem;
@@ -504,7 +511,7 @@ li {
 	background-image: linear-gradient(to top, aqua, black);
 }
 .card__side--back-6 {
-	background-image: linear-gradient(to top, #003363, black);
+	background-image: linear-gradient(to bottom, black, #fffc44);
 }
 .card__side--back-7 {
 	background-image: linear-gradient(to top, grey, black);
@@ -561,7 +568,7 @@ li {
 	font-size: 14px;
 }
 .tmdb-img {
-	margin-top: 0.6rem;
+	padding: 0.6rem 0;
 	width: 90px;
 }
 .redux-image {
@@ -579,8 +586,9 @@ li {
 	padding-top: 4px;
 	color: #6358f7;
 }
-.bitcoin-image {
-	width: 8.5rem !important;
+.weather-image {
+	width: 11rem !important;
+	filter: drop-shadow(2px 2px 6px #333) hue-rotate(15deg);
 }
 .next-image {
 	width: 80px;
@@ -603,6 +611,15 @@ li {
 	width: 30px;
 	padding-left: 0.2rem;
 	vertical-align: middle;
+}
+.react-query-image {
+	width: 120px;
+	height: auto;
+}
+.tailwind-css-image {
+	width: 30px;
+	height: auto;
+	filter: saturate(2) hue-rotate(20deg);
 }
 .card__picture--1 {
 	background-image: linear-gradient(
@@ -644,8 +661,8 @@ li {
 	background-size: cover;
 }
 .card__picture--6 {
-	background-image: linear-gradient(to top, #333, #0063c0),
-		url("https://www.interactivebrokers.com/images/web/cryptocurrency-hero.jpg");
+	background-image: linear-gradient(to top, #333, #eeeeeeaf),
+		url("../img/different_weather.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -722,7 +739,7 @@ li {
 }
 .card__heading-span--6 {
 	word-spacing: 4px;
-	background-image: linear-gradient(to right, #003363, rgba(0, 0, 0, 0.9));
+	background-image: linear-gradient(to top, #111, #e7d800c7);
 }
 .card__heading-span--7 {
 	word-spacing: 4px;
@@ -801,7 +818,6 @@ li {
 .project-icon {
 	font-size: 2.75rem;
 	position: relative;
-	top: 0.3rem;
 }
 
 .fa-react {
