@@ -272,7 +272,7 @@
 html {
 	font-size: 62.5%;
 	overflow-x: hidden;
-	scroll-behavior: smooth;
+	scroll-behavior: auto;
 }
 
 body {
@@ -465,7 +465,7 @@ li {
 }
 .about-me hr {
 	margin: 1rem 0;
-	width: 50%;
+	width: 90%;
 }
 
 .card {
@@ -1071,7 +1071,7 @@ li {
 		width: 16rem;
 	}
 	.about-me hr {
-		width: 70%;
+		width: 90%;
 	}
 }
 
@@ -1085,12 +1085,18 @@ li {
 	.header-text-box .md-heading {
 		font-size: 3rem;
 	}
+	.about-me-content {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 2rem;
+	}
 	.about-me-text {
 		padding-left: 2rem;
 		margin-right: 1rem;
 	}
 	.about-me-text .paragraph {
-		max-width: 47rem;
+		max-width: 60rem;
 	}
 	.about-me-tech {
 		position: relative;
@@ -1101,7 +1107,7 @@ li {
 		width: 17.5rem;
 	}
 	.about-me hr {
-		width: 70%;
+		width: 80%;
 	}
 	.why-work-with-me .why-work-container > *:not(:last-child) {
 		margin-right: 5rem;
@@ -1125,18 +1131,6 @@ li {
 		padding: 16rem 0;
 		padding-bottom: 12rem;
 	}
-	.about-me-content {
-		flex-direction: column;
-	}
-	.about-me-text {
-		margin-right: 0rem;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-	.about-me-text .paragraph {
-		max-width: 60rem;
-	}
 	.about-me-tech {
 		justify-content: center;
 		position: relative;
@@ -1148,7 +1142,7 @@ li {
 		width: 17.5rem;
 	}
 	.about-me hr {
-		width: 65%;
+		width: 85%;
 	}
 	.skills {
 		background-attachment: scroll;
