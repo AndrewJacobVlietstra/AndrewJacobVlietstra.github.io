@@ -588,7 +588,7 @@ li {
 }
 .weather-image {
 	width: 11rem !important;
-	filter: drop-shadow(2px 2px 6px #333) hue-rotate(15deg);
+	filter: drop-shadow(3px 3px 6px #333) hue-rotate(13deg);
 }
 .next-image {
 	width: 80px;
@@ -661,7 +661,7 @@ li {
 	background-size: cover;
 }
 .card__picture--6 {
-	background-image: linear-gradient(to top, #333, #eeeeeeaf),
+	background-image: linear-gradient(to top, #222, #fff895d3),
 		url("../img/different_weather.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
