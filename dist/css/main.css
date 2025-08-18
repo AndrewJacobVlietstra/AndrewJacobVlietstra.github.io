@@ -884,6 +884,7 @@ li {
 	backface-visibility: hidden;
 }
 .skills-container {
+	padding: 0rem 2rem;
 	width: 100%;
 	height: 100%;
 	display: flex;
@@ -1184,6 +1185,10 @@ li {
 	.main-nav .logo {
 		visibility: hidden;
 	}
+	.skills-container > * {
+		padding: 0rem 0.5rem;
+		min-width: fit-content;
+	}
 	.active {
 		display: flex;
 	}
@@ -1232,7 +1237,7 @@ li {
 	.skills .database,
 	.skills .deployment {
 		width: 32rem;
-		height: 17rem;
+		height: 20rem;
 	}
 	.skills .front-end:hover,
 	.skills .server:hover,
@@ -1360,8 +1365,8 @@ li {
 	.skills .server,
 	.skills .database,
 	.skills .deployment {
-		width: 21rem;
-		height: 13rem;
+		width: 25rem;
+		height: 15rem;
 	}
 	.skills-icon {
 		font-size: 3rem;
